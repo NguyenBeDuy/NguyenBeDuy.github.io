@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ cá vui nhộn</title>
+    <style>
+        #hoca {
+            border: 1px solid blue; 
+            height: 900px; 
+            position: relative;
+        }
+
+        #shark {
+            left: 100px; top: 400px;
+            position: absolute;
+            animation-name: Shark;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+        }
+        
+        @keyframes Shark {
+            0%   {left:100px; top:400px;}
+            20%  {left:300px; top:400px;}
+            40%  {left:500px; top:300px;}
+            50%  {left:700px; top:50px;}
+            60%  {left:700px; top:100px;}
+            80%  {left:500px; top:200px;}
+            100% {left:100px; top:400px; transform:scaleX(-1);}  
+        }
+
+        #Turtle {
+            left: 100px; top: 400px;
+            position: absolute;
+            animation-name: Turtle;
+            animation-duration: 13s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+        }
+
+        @keyframes Turtle {
+            0%   {left:100px; top:400px;}
+            20%  {left:250px; top:350px;} 
+            40%  {left:400px; top:200px;}
+            50%  {left:600px; top:50px;}
+            60%  {left:650px; top:100px;}
+            80%  {left:400px; top:200px;}
+            100% {left:100px; top:400px; transform:scaleX(-1);}  
+        }
+
+        #goldfish {
+            left: 100px; top: 400px;
+            position: absolute;
+            animation-name: Goldfish;
+            animation-duration: 11s; 
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+        }
+
+        @keyframes Goldfish {
+            0%   {left:100px; top:400px;}
+            20%  {left:350px; top:350px;}
+            40%  {left:500px; top:250px;}
+            50%  {left:700px; top:100px;}
+            60%  {left:650px; top:150px;}
+            80%  {left:500px; top:250px;}
+            100% {left:100px; top:400px; transform:scaleX(-1);}  
+        }
+
+    </style>
+</head>
+<body>
+    <div id="hoca">
+        <img id="goldfish" src="gold.png" alt="Gold Fish">
+        <img id="shark" src="shark.png" alt="Shark"> 
+        <img id="Turtle" src="turtle.png" alt="Turtle">
+    </div>
+
+    <script>
+        function changeBackgroundImage() {
+            var hoca = document.getElementById('hoca');
+            hoca.style.backgroundImage = "url('backg.jpg')";
+            hoca.style.backgroundSize = "cover";
+            hoca.style.backgroundPosition = "center";
+        }
+
+        window.onload = changeBackgroundImage;
+    </script>
+</body>
+</html>

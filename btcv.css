@@ -1,0 +1,69 @@
+.boder
+{
+    width: 680px;
+    height: 990px;
+    background-color: rgb(255, 255, 255);
+}
+.line
+{
+    width: 675px;
+    height: 250px;
+    background-color: #ffffff;
+}
+.inf
+{
+    width: 240px;
+    height: 990px;
+    background-color: #1300e8;
+    transform: translate( 23px,-150px);
+}
+.duy
+{
+    height: 215px;
+    width: 215px;
+    border-radius: 25%;
+    background-image: url(beduy.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transform: translate(35px,15px);
+}
+.td
+{
+    width: 308px;
+    height: 30px;
+    background-color: #00033f;
+    color: #ffffff;
+    transform: translate(330px,30px);
+    align-content: center;
+    padding-left: 10px;
+}
+.tt
+{
+    width: 308px;
+    height: 30px;
+    background-color: #00033f;
+    color: #ffffff;
+    transform: translate(330px,35px);
+    align-content: center;
+    padding-left: 10px;
+}
+.ht
+{
+    width: 308px;
+    height: 30px;
+    background-color: #00033f;
+    color: #ffffff;
+    transform: translate(330px,50px);
+    align-content: center;
+    padding-left: 10px;
+}
+.dc
+{
+    width: 308px;
+    height: 30px;
+    background-color: #00033f;
+    color: #ffffff;
+    transform: translate(330px,55px);
+    align-content: center;
+    padding-left: 10px;
+}
